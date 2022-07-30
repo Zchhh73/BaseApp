@@ -6,6 +6,11 @@ plugins {
     id 'maven-publish'
 }
 
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
 android {
     compileSdk rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
@@ -34,6 +39,33 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    publishing {
+        singleVariant("release")
+    }
+}
+
+afterEvaluate {
+    publishing {
+        def versionName = "0.0.1"
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.zch.base'
+                artifactId = 'zchBase'
+                version = versionName
+            }
+        }
+
+        repositories {
+            maven {
+                def baseUrl = buildDir.getParent()
+                def releaseUrl = "$baseUrl/repos/releases"
+                def snapshotsUrl = "$baseUrl/repos/snapshots"
+                url = version.endsWith("SNAPSHOT") ? snapshotsUrl : releaseUrl
+            }
+        }
     }
 }
 

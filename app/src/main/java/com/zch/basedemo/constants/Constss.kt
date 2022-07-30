@@ -1,4 +1,4 @@
-package com.zch.base.constants
+package com.zch.basedemo.constants
 
 import android.app.Application
 

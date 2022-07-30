@@ -1,6 +1,7 @@
-package com.zch.base
+package com.zch.basedemo
 
 import android.os.Bundle
+import com.zch.base.R
 import com.zch.base.base.BaseActivity
 import com.zch.base.base.NoViewModel
 import com.zch.base.databinding.ActivityMainBinding

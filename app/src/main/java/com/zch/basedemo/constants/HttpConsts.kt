@@ -1,4 +1,4 @@
-package com.zch.base.constants
+package com.zch.basedemo.constants
 
 import android.text.TextUtils
 import com.zch.utils.MMKVUtils

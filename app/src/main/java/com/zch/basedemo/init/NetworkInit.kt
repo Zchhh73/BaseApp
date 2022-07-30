@@ -1,8 +1,8 @@
-package com.zch.base.init
+package com.zch.basedemo.init
 
 import android.content.Context
 import com.zch.base.BuildConfig
-import com.zch.base.constants.HttpConsts
+import com.zch.basedemo.constants.HttpConsts
 import com.zch.network.RetrofitClient
 import com.zch.network.constants.NetWorkConfig
 import com.zch.network.retrofithelper.interceptor.HeaderInterceptor

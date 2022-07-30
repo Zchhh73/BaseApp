@@ -1,9 +1,10 @@
-package com.zch.base
+package com.zch.basedemo
 
 import android.app.Application
+import com.zch.base.BuildConfig
 import com.zch.base.base.BaseApplication
-import com.zch.base.constants.Constss
-import com.zch.base.init.NetworkInit
+import com.zch.basedemo.constants.Constss
+import com.zch.basedemo.init.NetworkInit
 
 /**
  *
