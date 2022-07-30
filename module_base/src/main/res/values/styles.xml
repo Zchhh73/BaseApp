@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:displayOptions">homeAsUp</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_nav_back_light</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarStyleBlue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:displayOptions">homeAsUp</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TransparentCourseWhiteTheme" parent="CourseWhiteTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="CourseWhiteTheme" parent="CourseWhiteBase" />
+
+    <!--白色标题-->
+    <style name="CourseWhiteBase">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <!--toolbar标题文字颜色-->
+        <item name="android:textColorPrimary">@color/title_black</item>
+        <!--下段代码就是去除阴影的-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="actionBarTheme">@style/WhiteMenuTextStyle</item>
+        <item name="homeAsUpIndicator">@drawable/ic_nav_back_light</item>
+    </style>
+
+    <!--黑色标题-->
+    <style name="CourseBlackBase">
+        <!-- toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--toolbar标题文字颜色-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--下段代码就是去除阴影的-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+        <item name="actionMenuTextAppearance">@style/ToolBarBlackStyle</item>
+        <item name="actionBarTheme">@style/BlackMenuTextStyle</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolBarBlackStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:displayOptions">homeAsUp</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="BlackMenuTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.Dialog.Alert.Self" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#000000</item>
+    </style>
+
+    <style name="WhiteMenuTextStyle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <declare-styleable name="YDProgressView">
+        <attr format="boolean" name="matProg_progressIndeterminate"/>
+        <attr format="color" name="matProg_barColor"/>
+        <attr format="color" name="matProg_rimColor"/>
+        <attr format="dimension" name="matProg_rimWidth"/>
+        <attr format="float" name="matProg_spinSpeed"/>
+        <attr format="integer" name="matProg_barSpinCycleTime"/>
+        <attr format="dimension" name="matProg_circleRadius"/>
+        <attr format="boolean" name="matProg_fillRadius"/>
+        <attr format="dimension" name="matProg_barWidth"/>
+        <attr format="boolean" name="matProg_linearProgress"/>
+    </declare-styleable>
+
+    <style name="DialogTheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- toolbar标题样式 -->
+    <style name="CollapsedTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!-- toolbar标题样式 -->
+    <style name="ExpandedTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+</resources>

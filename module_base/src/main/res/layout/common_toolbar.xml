@@ -1,0 +1,145 @@
+<com.google.android.material.appbar.CollapsingToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collapsing_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:expandedTitleMarginBottom="57dp"
+    app:expandedTitleMarginStart="18dp"
+    app:collapsedTitleGravity="center"
+    app:collapsedTitleTextAppearance="@style/CollapsedTitle"
+    app:contentScrim="?attr/colorPrimary"
+    app:expandedTitleTextAppearance="@style/ExpandedTitle"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/yd_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:contentInsetLeft="45dp"
+        app:contentInsetStart="45dp"
+        app:contentInsetRight="45dp"
+        app:contentInsetEnd="45dp"
+        app:layout_collapseMode="pin">
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/tv_toolbar"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="33dp"
+        android:padding="0dp"
+        android:text="副标题"
+        android:textSize="14dp"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+    <RelativeLayout
+        android:id="@+id/rl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        app:layout_collapseMode="pin">
+
+        <TextView
+            android:id="@+id/tv_fixtitle"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/iv_left"
+            android:layout_toLeftOf="@id/iv_right"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:maxLength="15"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:textColor="#FF20BB67"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_left_title"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_left"
+            android:layout_centerVertical="true"
+            android:textColor="#FF20BB67"
+            android:layout_marginLeft="6dp"
+            android:textSize="17sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:visibility="invisible"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_right2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@id/iv_right"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_right"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textSize="17sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>

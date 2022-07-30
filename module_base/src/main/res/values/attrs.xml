@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YDToolBar">
+
+        <attr name="xTitle" format="string"/>
+        <attr name="xTittleMaxLength" format="integer" />
+        <attr name="xFixedTitle" format="boolean" />
+        <attr name="xSupportedActionBar" format="boolean"/>
+        <attr name="xLeftButtonText" format="string" />
+        <attr name="xLeftButtonTextColor" format="color" />
+        <attr name="xLeftButtonTextSize" format="dimension" />
+        <attr name="xLeftButtonWidth" format="dimension" />
+        <attr name="xLeftButtonHeight" format="dimension" />
+        <attr name="xLeftButtonPadding" format="dimension"/>
+        <attr name="xLeftButtonMarginLeft" format="dimension" />
+        <attr name="xLeftButtonImageBackground" format="reference" />
+        <attr name="xRightButtonText" format="string" />
+        <attr name="xRightButtonTextColor" format="color" />
+        <attr name="xRightButtonTextSize" format="dimension" />
+        <attr name="xRightButtonWidth" format="dimension" />
+        <attr name="xRightButtonHeight" format="dimension" />
+        <attr name="xRightButtonPadding" format="dimension"/>
+        <attr name="xRightButtonMarginRight" format="dimension" />
+        <attr name="xRightButtonImageBackground" format="reference" />
+        <attr name="xToolbarPadding" format="dimension"/>
+        <attr name="xCollapsedTitleTextAppearance" format="reference" />
+        <attr name="xCollapsedTitleTextStyle" >
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="xCollapsedTitleTextColor" format="color" />
+        <attr name="xCollapsedTitleGravity">
+            <flag name="center" value="0x11"/>
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <attr name="xCollapsedToolBarHeight" format="dimension" />
+
+        <attr name="xExpandedTitleGravity">
+            <flag name="center" value="0x11"/>
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+        <attr name="xExpandedTitleTextAppearance" format="reference" />
+        <attr name="xExpandedTitleTextStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="xExpandedTitleTextColor" format="color" />
+        <attr name="xExpandedTitleMarginBottom" format="dimension" />
+        <attr name="xExpandedTitleMarginLeft" format="dimension" />
+
+        <attr name="xExpandedSubTitleVisible" format="boolean" />
+        <attr name="xExpandedSubTitleText" format="string" />
+        <attr name="xExpandedSubTitleTextSize" format="dimension" />
+        <attr name="xExpandedSubTitleTextColor" format="dimension" />
+        <attr name="xExpandedSubTitleMarginLeft" format="dimension" />
+        <attr name="xExpandedSubTitleMarginBottom" format="dimension" />
+        <attr name="xExpandedSubTitleGravity">
+            <flag name="center" value="0x11"/>
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+        </attr>
+    </declare-styleable>
+
+</resources>

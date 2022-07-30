@@ -1,0 +1,61 @@
+ext {
+
+    kotlin_version = "1.7.10"
+
+    android = [
+            compileSdkVersion : 32,
+            buildToolsVersion : "32.0.0",
+            minSdkVersion     : 21,
+            targetSdkVersion  : 28
+    ]
+
+    ktx = [
+            stdlib           : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            core             : "androidx.core:core-ktx:1.6.0",
+            coroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1",
+            coroutinesandroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1"
+
+    ]
+
+    jetpack = [
+            viewmodel         : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1",
+            livedata          : "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0",
+            extension         : "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            runtime           : "androidx.lifecycle:lifecycle-runtime-ktx:2.3.0",
+            java8             : "androidx.lifecycle:lifecycle-common-java8:2.3.1",
+            navigationFragment: "androidx.navigation:navigation-fragment-ktx:2.3.5",
+            navigationUi      : "androidx.navigation:navigation-ui-ktx:2.3.5"
+    ]
+
+    commonUI = [
+            appcompat      : "androidx.appcompat:appcompat:1.2.0",
+            material       : "com.google.android.material:material:1.3.0",
+            constrainlayout: "androidx.constraintlayout:constraintlayout:2.0.4",
+            freshlayout    : "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+            recyclerview   : "androidx.recyclerview:recyclerview:1.2.0",
+            carview        : "androidx.cardview:cardview:1.0.0",
+            multidex       : "androidx.multidex:multidex:2.0.1"
+    ]
+
+    other = [
+            // Smart
+            SmartRefreshLayout: 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2',
+            // mmkv
+            mmkv              : "com.tencent:mmkv-static:1.2.10",
+            // autosize
+            autosize          : 'me.jessyan:autosize:1.2.1',
+    ]
+
+    net=[
+            retrofit          : 'com.squareup.retrofit2:retrofit:2.9.0',
+            gson              : 'com.google.code.gson:gson:2.8.7',
+    ]
+
+
+    ktxLibs = ktx.values()
+    jetpackLibs = jetpack.values()
+    commonUILibs = commonUI.values()
+    otherLibs = other.values()
+    netLibs = net.values()
+
+}
