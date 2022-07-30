@@ -31,6 +31,33 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    publishing {
+        singleVariant("release")
+    }
+}
+
+afterEvaluate {
+    publishing {
+        def versionName = "0.0.1"
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.zch.utils'
+                artifactId = 'zchUtils'
+                version = versionName
+            }
+        }
+
+        repositories {
+            maven {
+                def baseUrl = buildDir.getParent()
+                def releaseUrl = "$baseUrl/repos/releases"
+                def snapshotsUrl = "$baseUrl/repos/snapshots"
+                url = version.endsWith("SNAPSHOT") ? snapshotsUrl : releaseUrl
+            }
+        }
+    }
 }
 
 dependencies {
