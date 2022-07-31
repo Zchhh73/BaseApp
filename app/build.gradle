@@ -39,4 +39,5 @@ dependencies {
     implementation project(':module_base')
     implementation project(':module_network')
     implementation project(':module_utils')
+//    implementation 'com.github.Zchhh73:BaseApp:v0.1'
 }
